@@ -1,18 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 import time 
 import sys
 import numpy as np 
 
 import matplotlib.pyplot as plt
 get_ipython().run_line_magic('matplotlib', 'inline')
-
-
-# In[6]:
 
 
 def Plotvec1(u, z, v):
@@ -38,27 +29,8 @@ def Plotvec2(a,b):
     plt.xlim(-2, 2)
 
 
-# In[7]:
-
-
 import numpy as np 
-
-
-# In[8]:
-
 
 x = np.linspace(0, 2*np.pi, num=100)
 y = np.sin(x)
-
-
-# In[9]:
-
-
 plt.plot(x, y)
-
-
-# In[ ]:
-
-
-
-
