@@ -8,12 +8,6 @@ data  = requests.get(url).text
 soup = BeautifulSoup(data,"html.parser")
 
 #looking for the 10 most densly populated countries table:
-for index,table in enumerate(tables):
-    if ("10 most densely populated countries" in str(table)):
-        table_index = index
-print(table_index)
-print(tables[table_index].prettify())
-
 population_data = pd.DataFrame(columns=["Rank", "Country", "Population", "Area", "Density"])
 
 for row in tables[table_index].tbody.find_all("tr"):
