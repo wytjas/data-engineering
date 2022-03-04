@@ -9,7 +9,6 @@ soup = BeautifulSoup(data,"html.parser")
 
 #looking for the 10 most densly populated countries table:
 population_data = pd.DataFrame(columns=["Rank", "Country", "Population", "Area", "Density"])
-
 for row in tables[table_index].tbody.find_all("tr"):
     col = row.find_all("td")
     if (col != []):
